@@ -16,10 +16,13 @@
             if (Worker !== undefined) {
                 if (!worker1) {
                     const worker1 = new Worker(link);
+                    console.log("worker1 created:",worker1);
                 }
             }
             if (worker1) {
+                console.log(1);
                 worker1.postMessage("start");
+                console.log(2);
             }
         }
     </script>
